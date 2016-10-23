@@ -1,0 +1,51 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SPC.Log4Net
+</name>
+</assembly>
+<members>
+<member name="T:SPC.Log4Net.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:SPC.Log4Net.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:SPC.Log4Net.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:SPC.Log4Net.Filters.AndFilter">
+ <summary>
+ All of the filters are true
+ </summary>
+</member>
+<member name="T:SPC.Log4Net.Filters.RateLimitFilter">
+ <summary>
+ Blocks errors unless X nos occur within a set time period.
+ Errors are grouped by the class of the exception 
+ </summary>
+</member>
+<member name="T:SPC.Log4Net.Exceptions.OnApplicationError">
+ <summary>
+ Class to call from OnApplicationError sub of Global.ASAX
+ none of this is umbraco specific
+ </summary>
+</member>
+<member name="M:SPC.Log4Net.Exceptions.OnApplicationError.OnApplicationError(System.Object,System.EventArgs)">
+ <summary>
+ Called from the OnApplicationError sub of Global.ASAX
+ Note, does not redirect to an error page (must be done by the calling code)
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+</members>
+</doc>
